@@ -1,5 +1,5 @@
 # encoding: UTF-8
-class CreateAnswers < ActiveRecord::Migration
+class CreateAnswers < ActiveRecord::Migration[6.0]
   def self.up
     create_table :answers do |t|
       # Context

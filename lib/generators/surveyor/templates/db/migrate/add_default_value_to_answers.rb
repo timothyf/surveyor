@@ -1,5 +1,5 @@
 # encoding: UTF-8
-class AddDefaultValueToAnswers < ActiveRecord::Migration
+class AddDefaultValueToAnswers < ActiveRecord::Migration[6.0]
   def self.up
     add_column :answers, :default_value, :string
   end

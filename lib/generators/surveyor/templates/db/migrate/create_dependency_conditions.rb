@@ -1,5 +1,5 @@
 # encoding: UTF-8
-class CreateDependencyConditions < ActiveRecord::Migration
+class CreateDependencyConditions < ActiveRecord::Migration[6.0]
   def self.up
     create_table :dependency_conditions do |t|
       # Context

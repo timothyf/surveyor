@@ -1,5 +1,5 @@
 # encoding: UTF-8
-class AddCorrectAnswerIdToQuestions < ActiveRecord::Migration
+class AddCorrectAnswerIdToQuestions < ActiveRecord::Migration[6.0]
   def self.up
     add_column :questions, :correct_answer_id, :integer
   end

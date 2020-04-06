@@ -1,5 +1,5 @@
 # encoding: UTF-8
-class AddVersionToSurveys < ActiveRecord::Migration
+class AddVersionToSurveys < ActiveRecord::Migration[6.0]
   def self.up
     add_column :surveys, :survey_version, :integer, :default => 0
   end

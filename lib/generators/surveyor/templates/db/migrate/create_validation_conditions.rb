@@ -1,5 +1,5 @@
 # encoding: UTF-8
-class CreateValidationConditions < ActiveRecord::Migration
+class CreateValidationConditions < ActiveRecord::Migration[6.0]
   def self.up
     create_table :validation_conditions do |t|
       # Context
