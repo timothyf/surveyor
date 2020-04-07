@@ -62,6 +62,7 @@ module Surveyor
       self.context = {}
     end
     def parse(str)
+      Surveyor::Parser.rake_trace "******** Parsing"
       instance_eval(str)
       return context[:survey]
     end
