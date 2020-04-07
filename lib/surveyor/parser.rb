@@ -85,8 +85,11 @@ module Surveyor
       if block_models.include?(type)
         self.instance_eval(&block)
         if type == 'survey'
+          Surveyor::Parser.rake_trace "Step 1"
           resolve_dependency_condition_references
+          Surveyor::Parser.rake_trace "Step 2"
           resolve_question_correct_answers
+          Surveyor::Parser.rake_trace "Step 3"
           report_lost_and_duplicate_references
           report_missing_default_locale
           Surveyor::Parser.rake_trace("", -2)
